@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Web Server
+</title>
+<style>
+#wrapper{
+background-image:url("wswrapper.jpg");
+}
+#logo{
+margin:20px 0px 20px 470px;
+}
+#content{
+margin:50px 50px 0px 50px;
+border-left:3px solid #7c7063;
+border-right:3px solid #7c7063;
+background-image:url("wscontent.jpg");
+}
+#content h1{
+font-size:200%;
+color:black;
+}
+#content p{
+font-size:150%;
+color:purple;
+}
+#content ul{
+font-size:150%;
+color:purple;
+}
+#footer{
+float:left;
+height:80px;
+width: 100%;
+border-top:3px solid #7c7063;
+margin:0px 0px 30px 0px;
+}
+#footer ul li{
+float:left;
+list-style:none;
+padding-right:20px;
+}
+#footer img{
+height:55px;
+width:55px;
+}
+.top{
+color:yellow;
+font-size:150%;
+margin:30px 0px 30px 500px;
+}
+#footer p{
+float:right;
+color:red;
+font-size:150%;
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <a name="top"></a>
+  <div id="logo">
+   <img src="webserverlogo.jpg">  
+  </div>
+    <div id="content">
+	<h1>Web Server</h1>
+	<p>A web server is an information technology that processes requests via HTTP, the basic network protocol used to distribute information on the World Wide Web. The term can refer either to the entire computer system, an appliance, or specifically to the software that accepts and supervises the HTTP requests.</p>
+	<h1>Common Features</h1>
+	<ul>
+	<li>Virtual hosting to serve many web sites using one IP address</li>
+	<li>Large file support to be able to serve files whose size is greater than 2 GB on 32 bit OS</li>
+	<li>Bandwidth throttling to limit the speed of responses in order to not saturate the network and to be able to serve more clients</li>
+	<li>Server-side scripting to generate dynamic web pages, still keeping web server and website implementations separate from each other</li>
+	</ul>
+	<marquee direction="right"><h1>Apache Web Server</h1></marquee>
+	<img src="apache.jpg">
+	<p>Definition: Apache is generally recognized as the world's most popular Web server (HTTP server). Originally designed for Unix environments, the Apache Web server has been ported to Windows and other network operating systems. The name "Apache" derives from the word "patchy" that the Apache developers used to describe early versions of their software.</p>
+	<p>The Apache web server provides a full range of web server features, including CGI, SSL, and virtual domains. Apache also supports plug-in modules for extensibility. Apache is free software, distributed by the Apache Software Foundation that promotes various free and open source advanced Web technologies.</p>
+	<h1>Steps to install Apache web server on windows</h1>
+	<h2>Download Apache</h2>
+	<p>Download the Apache HTTPD Web Server from the Apache web site . </p>
+	<h2>Run the apache installer</h2>
+	<p>When you have finished downloading the file, double-click it to run the Apache installer. Follow the instructions to install Apache. </p>
+	<p>When you arrive at the "Server Information" dialog box, enter "localhost" (without the quotes) for the Network Domain as well as for the Server Name and whatever email address you wish for the "Administrator's Email Address" field. </p>
+	<h2>Enabling and disabling the apache service</h2>
+	<p>The Apache installer automatically starts the Apache service when it finishes the installation. If you ever wish to stop the Apache 2 service and only start it manually when you need to use it for testing, go to Control Panel -> Administrative Tools -> Services, look for the "Apache" service and double-click it.</p>
+	<h2>Changing the Server Name and Administrator's Email Address</h2>
+	<p>If you want to change the server name that you entered when you set up Apache, use the Start menu to open the Apache configuration file: you can find the appropriate item at Start -> Programs -> Apache HTTP Server -> Configure Apache Server -> Edit the Apache httpd.conf Configuration File. </p>
+	<h2>Configuring Apache to Accept Server Side Includes (SSI)</h2>
+	<p> If you want the web server to parse Server Side Includes (SSI directives), search for the text "server-side includes" in the file. Add the following lines just after the block of text containing those words:
+     <br>AddType text/html .shtml
+     <br>AddOutputFilter INCLUDES .shtml </p>
+	<h2>Save the Configuration File and Restart Apache</h2>
+	<p>When you are satisfied with your changes, save the file - just use the "Save" item from the "File" menu or type Ctrl+S. After you make a configuration change, you need to restart Apache. </p>
+	<marquee direction="left"><h1>IIS Web Server</h1></marquee>
+	<p>Internet Information Services (IIS, formerly Internet Information Server) is an extensible web server created by Microsoft for use with Windows NT family. IIS supports HTTP, HTTPS, FTP, FTPS, SMTP and NNTP. It has been an integral part of the Windows NT family since Windows NT 4.0.</p>
+	 <p>IIS is not turned on by default when Windows is installed. The IIS Manager is accessed through the Microsoft Management Console or Administrative Tools in the Control Panel.</p>
+    <h1>How to install IIS on windows</h1>
+	<video height=450 width=600 controls>
+	<source src="iis.mp4">
+	</video>
+	<marquee direction="right"><h1>PWS Web Server</h1></marquee>
+	<p>A personal web server, or personal server in short, allows users to store, selectively share, or publish information on the web or on a home network. Unlike other types of web servers, a personal web server is owned or controlled by an individual, and operated for the individual's needs, instead of by a company.It can be implemented as an application, as an general purpose server, or as a shared hosting model.</p>
+	<h1>How to install PWS on windows</h1>
+	<video height=450 width=600 controls>
+	<source src="pws.mp4" type="video/mp4">
+	</video>
+	<div class="top"><a href="#top">Go to top</a>
+	</div>
+  </div><!---end of wrapper--->
+	 <div id="footer">
+	<ul>
+	  <li><a href="https://www.youtube.com/watch?v=5gW4-gGxJlY&list=PLm2lqMQEtwGXIkcZLEB-miSDfmbT6dA3_"><img src="youtube logo.jpg" alt="youtube" title="youtube"></a></li>
+	  <li><a href="https://www.facebook.com"><img src="facebook logo.jpg" alt="facebook" title="facebook"></a></li>
+	  <li><a href="https://www.gmail.com"><img src="gmail logo.jpg" alt="gmail" title="gmail"></a></li>
+	  </ul>
+	  <p>Created by: Vaibhav Hooda
+      <br>vaibhav.hooda1@gmail.com</p>	
+	</div>
+  </body>
+</html>
